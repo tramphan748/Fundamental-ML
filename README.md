@@ -8,7 +8,7 @@ This repository contains the code and data for a mini-project on facial expressi
     |No.| Student Name    | Student ID |
     | --------| -------- | ------- |
     |1|Nguyen Hoang Yen Nhi|21110358|
-    |2|Nguyen Minh Nhu|21110360|
+    |2|Vu Minh Nhu|21110360|
     |3|Phan Hong Tram|21110414|
     |4|Tuong Hoang Ngoc Tuyen|21110444|
 
