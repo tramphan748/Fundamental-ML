@@ -10,7 +10,7 @@ This repository contains the code and data for a mini-project on facial expressi
     |1|Nguyen Hoang Yen Nhi|21110358|
     |2|Vu Minh Nhu|21110360|
     |3|Phan Hong Tram|21110414|
-    |4|Tuong Hoang Ngoc Tuyen|21110444|
+    |4|||
 
 - The submission deadline is strict: **11:59 PM** on **June 22nd, 2024**. Commits pushed after this deadline will not be considered.
 
