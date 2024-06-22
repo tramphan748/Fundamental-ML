@@ -59,6 +59,8 @@ Trong project trên, nhóm em sử dụng 4 model để huấn luyện dữ li�
 |3|kNN model|0.35|0.35|
 |4|Naive Bayes model|0.20|0.33|
 
+![bar chart](./materials/bar_chart.png)
+
 #### Sau khi chọn được best model là kNN, ta fit lại model trên tập test của original data và transformed data:
 |No.| Score   | kNN model of Original data|kNN model of of transformed data|
 | --------| -------- | ------- |------- |
@@ -69,4 +71,13 @@ Trong project trên, nhóm em sử dụng 4 model để huấn luyện dữ li�
 - The most errors: cảm xúc mang nhãn số 0 "Angry".
 
 ## 💡 INTERESTING FINDINGS
-Trong quá trình thực hiện huấn luyện model Decision tree, và khi thực hiện fine tuning mô hình, sẽ xuất hiện tình trạng mất là làm mất đi hoàn toàn các đặc trưng thuộc nhãn số 1. Nguyên nhân là do mô hình tối ưu hoá bộ tham số hoặc là do cây quyết định chưa đủ sâu để phân tách các đặc trưng cũng như là do tính mất cân bằng giữa các dữ liệu ( dữ liệu mang nhãn số 1 chỉ có 63 mẫu trong khi các dữ liệu thuộc các lớp khác có hơn 500 mẫu) , điều này có thể dẫn đến mô hình bị rơi vào tình trạng overfitting. Khi đó, chúng ta cần sử dụng các kỹ thuật Pre-prunning và post-prunning để thực hiện việc cắt tỉa bớt cho cây quyết định. Từ đó dẫn đến hiệu suất tốt hơn của mô hình.
+Trong quá trình thực hiện huấn luyện model Decision tree, và khi thực hiện fine tuning mô hình của dữ liệu gốc, sẽ xuất hiện tình trạng làm mất đi hoàn toàn các đặc trưng thuộc nhãn số 1, tức là các điểm số như precision, recall và f-1 đều bằng 0
+Nguyên nhân:
+**1. Imbalanced data:**
+Do trong tập dữ liệu mẫu, các dữ liệu mang nhãn số 1 chỉ có 63 mẫu trong khi các dữ liệu thuộc các lớp khác có hơn 500 mẫu
+**2. Overfitting:**
+Do mô hình quá phức tạp và chưa tối ưu hoá đúng bộ tham số dẫn đến cây quyết định chưa đủ sâu để phân tách các đặc trưng, nên nó có thể dẫn đến việc học của mô hình khớp với tập train một cách quá mức dẫn đến việc không tổng quát hoá tốt trên tập validation.
+
+**Giải pháp:** Sử dụng các kỹ thuật Pruning để cắt tỉa bớt mô hình cây nhằm làm mô hình trở nên cô đặc và tối ưu hoá hơn
+1. Pre-pruning
+2. Post-pruning
