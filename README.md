@@ -68,5 +68,5 @@ Trong project trên, nhóm em sử dụng 4 model để huấn luyện dữ li�
 - The most accurate: cảm xúc mang nhãn số 3 "Happy".
 - The most errors: cảm xúc mang nhãn số 0 "Angry".
 
-## 📋 INTERESTING FINDINGS
+## 💡 INTERESTING FINDINGS
 Trong quá trình thực hiện huấn luyện model Decision tree, và khi thực hiện fine tuning mô hình, sẽ xuất hiện tình trạng mất là làm mất đi hoàn toàn các đặc trưng thuộc nhãn số 1. Nguyên nhân là do mô hình tối ưu hoá bộ tham số hoặc là do cây quyết định chưa đủ sâu để phân tách các đặc trưng cũng như là do tính mất cân bằng giữa các dữ liệu ( dữ liệu mang nhãn số 1 chỉ có 63 mẫu trong khi các dữ liệu thuộc các lớp khác có hơn 500 mẫu) , điều này có thể dẫn đến mô hình bị rơi vào tình trạng overfitting. Khi đó, chúng ta cần sử dụng các kỹ thuật Pre-prunning và post-prunning để thực hiện việc cắt tỉa bớt cho cây quyết định. Từ đó dẫn đến hiệu suất tốt hơn của mô hình.
