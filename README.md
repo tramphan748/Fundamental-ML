@@ -8,7 +8,7 @@ This repository contains the code and data for a mini-project on facial expressi
     |No.| Student Name    | Student ID |
     | --------| -------- | ------- |
     |1|Nguyễn Hoàng Yến Nhi|21110358|
-    |2|Nguyễn Minh Như|21110360|
+    |2|Vũ Minh Như|21110360|
     |3|Phan Hồng Trâm|21110414|
 
 - The submission deadline is strict: **11:59 PM** on **June 22nd, 2024**. Commits pushed after this deadline will not be considered.
@@ -67,3 +67,6 @@ Trong project trên, nhóm em sử dụng 4 model để huấn luyện dữ li�
 #### Để nhận dạng xem biểu tượng cảm xúc nào là chính xác, hay rủi ro nhất, ta dựa theo điểm f1, do điểm f1 cung cấp một thước đo cân bằng giữa độ chính xác của các dự đoán dương tính và khả năng phát hiện ra trường hợp dương tính, vì vậy:
 - The most accurate: cảm xúc mang nhãn số 3 "Happy".
 - The most errors: cảm xúc mang nhãn số 0 "Angry".
+
+## 📋 INTERESTING FINDINGS
+Trong quá trình thực hiện huấn luyện model Decision tree, và khi thực hiện fine tuning mô hình, sẽ xuất hiện tình trạng mất là làm mất đi hoàn toàn các đặc trưng thuộc nhãn số 1. Nguyên nhân là do mô hình tối ưu hoá bộ tham số hoặc là do cây quyết định chưa đủ sâu để phân tách các đặc trưng cũng như là do tính mất cân bằng giữa các dữ liệu ( dữ liệu mang nhãn số 1 chỉ có 63 mẫu trong khi các dữ liệu thuộc các lớp khác có hơn 500 mẫu) , điều này có thể dẫn đến mô hình bị rơi vào tình trạng overfitting. Khi đó, chúng ta cần sử dụng các kỹ thuật Pre-prunning và post-prunning để thực hiện việc cắt tỉa bớt cho cây quyết định. Từ đó dẫn đến hiệu suất tốt hơn của mô hình.
