@@ -7,10 +7,9 @@ This repository contains the code and data for a mini-project on facial expressi
 
     |No.| Student Name    | Student ID |
     | --------| -------- | ------- |
-    |1|Nguyen Hoang Yen Nhi|21110358|
-    |2|Vu Minh Nhu|21110360|
-    |3|Phan Hong Tram|21110414|
-    |4|||
+    |1|Nguyễn Hoàng Yến Nhi|21110358|
+    |2|Nguyễn Minh Như|21110360|
+    |3|Phan Hồng Trâm|21110414|
 
 - The submission deadline is strict: **11:59 PM** on **June 22nd, 2024**. Commits pushed after this deadline will not be considered.
 
@@ -33,12 +32,30 @@ This project is designed to be completed in the following steps:
     
     1. Prerequisite
     2. Principle Component Analysis
+       - [x] Question 1.
+       - [x] Question 2.
     3. Image Classification
-    4. Evaluating Classification Performance 
+       - [x] MLP 
+         - Accuracy score of original data: 0.35
+         - Accuracy score of transformed data: 0.36
+       - [x] Decision Tree
+         - Accuracy score of original data: 0.30
+         - Accuracy score of transformed data: 0.24
+       - [x] kNN
+         - Accuracy score of original data: 0.35
+         - Accuracy score of transformed data: 0.35
+       - [x] Naive Bayes
+         - Accuracy score of original data: 0.20
+         - Accuracy score of transformed data: 0.33
+    4. Evaluating Classification Performance
+       **Best model**: kNN 
+        - Accuracy score of original data: 0.37
+        - Accuracy score of transformed data: 0.36
+    
 
     Make sure to run all the code cells in the ```EDA.ipynb``` notebook and ensure they produce output before committing and pushing your changes.
 
-5. **Commit and Push Your Changes**: Once you've completed the tasks outlined in the notebook, commit your changes to your local repository and push them to your forked repository on GitHub.
+4. **Commit and Push Your Changes**: Once you've completed the tasks outlined in the notebook, commit your changes to your local repository and push them to your forked repository on GitHub.
 
 
 Feel free to modify and extend the notebook to explore further aspects of the data and experiment with different algorithms. Good luck.
