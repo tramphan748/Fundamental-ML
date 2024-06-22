@@ -59,7 +59,6 @@ Trong project trên, nhóm em sử dụng 4 model để huấn luyện dữ li�
 |3|kNN model|0.35|0.35|
 |4|Naive Bayes model|0.20|0.33|
 
-![bar chart](./materials/bar_chart.png)
 
 #### Sau khi chọn được best model là kNN, ta fit lại model trên tập test của original data và transformed data:
 |No.| Score   | kNN model of Original data|kNN model of of transformed data|
@@ -69,7 +68,7 @@ Trong project trên, nhóm em sử dụng 4 model để huấn luyện dữ li�
 #### Để nhận dạng xem biểu tượng cảm xúc nào là chính xác, hay rủi ro nhất, ta dựa theo điểm f1, do điểm f1 cung cấp một thước đo cân bằng giữa độ chính xác của các dự đoán dương tính và khả năng phát hiện ra trường hợp dương tính, vì vậy:
 - The most accurate: cảm xúc mang nhãn số 3 "Happy".
 - The most errors: cảm xúc mang nhãn số 0 "Angry".
-
+![bar chart](./materials/bar_chart.png)
 ## 💡 INTERESTING FINDINGS
 Trong quá trình thực hiện huấn luyện model Decision tree, và khi thực hiện fine tuning mô hình của dữ liệu gốc, sẽ xuất hiện tình trạng làm mất đi hoàn toàn các đặc trưng thuộc nhãn số 1, tức là các điểm số như precision, recall và f-1 đều bằng 0.
 
