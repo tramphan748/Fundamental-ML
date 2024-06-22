@@ -36,21 +36,10 @@ This project is designed to be completed in the following steps:
        - [x] Question 2.
     3. Image Classification
        - [x] MLP 
-         - Accuracy score of original data: 0.35
-         - Accuracy score of transformed data: 0.36
        - [x] Decision Tree
-         - Accuracy score of original data: 0.30
-         - Accuracy score of transformed data: 0.24
        - [x] kNN
-         - Accuracy score of original data: 0.35
-         - Accuracy score of transformed data: 0.35
        - [x] Naive Bayes
-         - Accuracy score of original data: 0.20
-         - Accuracy score of transformed data: 0.33
     4. Evaluating Classification Performance
-       **Best model**: kNN 
-        - Accuracy score of original data: 0.37
-        - Accuracy score of transformed data: 0.36
     
 
     Make sure to run all the code cells in the ```EDA.ipynb``` notebook and ensure they produce output before committing and pushing your changes.
