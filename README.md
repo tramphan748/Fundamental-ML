@@ -76,5 +76,5 @@ Trong project trên, nhóm em sử dụng 4 model để huấn luyện dữ li�
 |1|Accuaracy score|0.37|0.35|
 
 #### Để nhận dạng xem biểu tượng cảm xúc nào là chính xác, hay rủi ro nhất, ta dựa theo điểm f1, do điểm f1 cung cấp một thước đo cân bằng giữa độ chính xác của các dự đoán dương tính và khả năng phát hiện ra trường hợp dương tính, vì vậy:
-The most accurate: cảm xúc mang nhãn số 3 "Happy".
-The most errors: cảm xúc mang nhãn số 0 "Angry".
+- The most accurate: cảm xúc mang nhãn số 3 "Happy".
+- The most errors: cảm xúc mang nhãn số 0 "Angry".
