@@ -59,3 +59,22 @@ This project is designed to be completed in the following steps:
 
 
 Feel free to modify and extend the notebook to explore further aspects of the data and experiment with different algorithms. Good luck.
+
+## 📋 REPORT OF PROJECT
+Trong project trên, nhóm em sử dụng 4 model để huấn luyện dữ liệu, gồm: MLP Model, DecisionTree Classifier, KNeighbors Classifier và Naive Bayes model. Dựa vào Classification report và Confusion matrix, mô hình KNeighbors Classifier là mô hình tốt nhất và mô hình tệ nhất là Naive Bayes model. Kết luận dựa vào việc accuracy score và main score là F1 của model KNeighbors Classifier là cao nhất, ngược lại score của Naive Bayes là thấp nhất. 
+
+|No.| Model    | Accuarary score of Original data|Accuarary score of transformed data|
+| --------| -------- | ------- |------- |
+|1|MLP model|0.35|0.36|
+|2|Decision Tree model|0.30|0.24|
+|3|kNN model|0.35|0.35|
+|4|Naive Bayes model|0.20|0.33|
+
+#### Sau khi chọn được best model là kNN, ta fit lại model trên tập test của original data và transformed data:
+|No.| Score   | kNN model of Original data|kNN model of of transformed data|
+| --------| -------- | ------- |------- |
+|1|Accuaracy score|0.37|0.35|
+
+#### Để nhận dạng xem biểu tượng cảm xúc nào là chính xác, hay rủi ro nhất, ta dựa theo điểm f1, do điểm f1 cung cấp một thước đo cân bằng giữa độ chính xác của các dự đoán dương tính và khả năng phát hiện ra trường hợp dương tính, vì vậy:
+The most accurate: cảm xúc mang nhãn số 3 "Happy".
+The most errors: cảm xúc mang nhãn số 0 "Angry".
